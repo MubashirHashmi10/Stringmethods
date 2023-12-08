@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+
+    <script>
+        // Task 1
+        var firstName = prompt("Enter your first name:");
+        var lastName = prompt("Enter your last name:");
+        var fullName = firstName + " " + lastName;
+        alert("Welcome, " + fullName + "!");
+
+        // Task 2
+        var favoritePhone = prompt("Enter your favorite mobile phone model:");
+        var lengthOfInput = favoritePhone.length;
+        alert("Length of your favorite phone model: " + lengthOfInput);
+
+        // Task 3
+        var indexN = "Pakistani".indexOf("n");
+        console.log("Index of 'n' in 'Pakistani': " + indexN);
+
+        // Task 4
+        var lastIndexL = "Hello World".lastIndexOf("l");
+        console.log("Last index of 'l' in 'Hello World': " + lastIndexL);
+
+        // Task 5
+        var charAt3 = "Pakistani".charAt(3);
+        console.log("Character at 3rd index in 'Pakistani': " + charAt3);
+
+        // Task 6
+        var concatFullName = firstName.concat(" ", lastName);
+        console.log("Greetings using concat(): " + concatFullName);
+
+        // Task 7
+        var city = "Hyderabad";
+        var replacedCity = city.replace("Hyder", "Islam");
+        console.log("After replacement: " + replacedCity);
+
+        // Task 8
+        var message = "Ali and Sami are best friends. They play cricket and football together.";
+        var replacedMessage = message.replace(/and/g, "&");
+        console.log("After replacement: " + replacedMessage);
+
+        // Task 9
+        var numString = "472";
+        var numValue = Number(numString);
+        console.log("Value: " + numValue + "\nType: " + typeof numValue);
+
+        // Task 10
+        var userInputUpperCase = prompt("Enter text to convert to uppercase:");
+        alert("Uppercase: " + userInputUpperCase.toUpperCase());
+
+        // Task 11
+        var userInputTitleCase = prompt("Enter text to convert to title case:");
+        alert("Title Case: " + userInputTitleCase.charAt(0).toUpperCase() + userInputTitleCase.slice(1));
+
+        // Task 12
+        var num = 35.36;
+        var numStringWithoutDot = num.toString().replace(".", "");
+        console.log("Converted string without dot: " + numStringWithoutDot);
+
+        // Task 13
+        var username = prompt("Enter username:");
+        if(/[!@.,]/.test(username)) {
+            alert("Please enter a valid username without special symbols.");
+        }
+
+        // Task 14
+        var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+        var searchItem = prompt("Search for an item:").toLowerCase();
+        var itemFound = items.includes(searchItem);
+        alert("Item found: " + itemFound);
+
+        // Task 15
+        var password = prompt("Enter a password:");
+        if (!/^[a-zA-Z]/.test(password) || !/[0-9]/.test(password) || password.length < 6) {
+            alert("Please enter a valid password meeting the requirements.");
+        }
+
+        // Task 16
+        var university = "University of Karachi";
+        var universityArray = university.split(" ");
+        console.log("Array elements: " + universityArray);
+
+        // Task 17
+        var userInputLastChar = prompt("Enter text:");
+        var lastChar = userInputLastChar.charAt(userInputLastChar.length - 1);
+        alert("Last character: " + lastChar);
+
+        // Task 18
+        var givenString = "The quick brown fox jumps over the lazy dog";
+        var occurrencesOfThe = givenString.match(/\bthe\b/gi).length;
+        console.log("Occurrences of 'the': " + occurrencesOfThe);
+    </script>
+
+</body>
+</html>
